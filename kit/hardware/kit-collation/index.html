@@ -1788,23 +1788,31 @@
 <h2 id="process">Process<a class="headerlink" href="#process" title="Permanent link">&para;</a></h2>
 <p>Each kit must go through the following process. Once the CHECKIN task has been performed for a given kit the remaining tasks can be run in parallel - especially the testing of different parts. The sequence of tasks is the same for all parts, however the specific requirements vary depending upon the part.</p>
 <ol>
-<li><a href="#markdown-header-checkin">CHECKIN</a> - Unpack each kit and scan its contents into a single location in the Inventory. Any kit expected back from teams but not found is marked as missing.</li>
-<li><a href="#markdown-header-visual">VISUAL</a> - Visually inspect each part for damage.</li>
-<li><a href="#markdown-header-clean">CLEAN</a> - Clean each part.</li>
-<li><a href="#markdown-header-test">TEST</a> - Test each part, where possible.</li>
-<li><a href="#markdown-header-checkout">CHECKOUT</a> - Pack parts of the same type into boxes and update the Inventory.</li>
-<li><a href="#markdown-header-chaseup">CHASEUP</a> - [after event] Chase up missing parts.</li>
+<li><a href="#checkin">CHECKIN</a> - Unpack each kit and scan its contents into a single location in the Inventory. Any kit expected back from teams but not found is marked as missing.</li>
+<li><a href="#visual">VISUAL</a> - Visually inspect each part for damage.</li>
+<li><a href="#clean">CLEAN</a> - Clean each part.</li>
+<li><a href="#test">TEST</a> - Test each part, where possible.</li>
+<li><a href="#checkout">CHECKOUT</a> - Pack parts of the same type into boxes and update the Inventory.</li>
+<li><a href="#chaseup">CHASEUP</a> - [after event] Chase up missing parts.</li>
 </ol>
 <p>Throughout the process the state of each part is tracked through two fields: <code>functional_condition</code> (currently <code>condition</code> for backwards compatibility) and <code>physical_condition</code>. The <code>functional_condition</code> field has a value of either <code>unknown</code>, <code>broken</code> or <code>working</code> and is set based upon the outcome of the testing procedure carried out in the TEST task. The <code>physical_condition</code> field has one of the same three values that the <code>functional_condition</code> field can have, but it is set based upon a visual inspection of the part during the VISUAL task.</p>
 <p>We will only ship parts that have both a <code>functional_condition</code> and <code>physical_condition</code> of <code>working</code>. After the Kit Collation Event any parts with either a <code>functional_condition</code> or <code>physical_condition</code> of <code>broken</code> will be assessed to see whether they can be repaired or need to be replaced.</p>
 <h2 id="checkin">CHECKIN<a class="headerlink" href="#checkin" title="Permanent link">&para;</a></h2>
-<p>Tools: Laptop, barcode/QR scanner
-Duration: 1 person day</p>
+<dl>
+<dt>Tools:</dt>
+<dd>Laptop, barcode/QR scanner</dd>
+<dt>Duration:</dt>
+<dd>1 person day</dd>
+</dl>
 <p>Remove each part from the kit box and move it into a <code>checked-in</code> directory in the Inventory. There is no need to worry about keeping track of which team the part came from, as this information can be retrieved from the Inventory at a later date if required. Mark each part as having <code>functional_condition: unknown</code> and <code>physical_condition: unknown</code>.</p>
 <p>If the Inventory shows any parts remaining in the kit box after all of the parts have been physically removed move them into a <code>missing</code> directory.</p>
 <h2 id="visual">VISUAL<a class="headerlink" href="#visual" title="Permanent link">&para;</a></h2>
-<p>Tools: Laptop, barcode/QR scanner, label printer
-Duration: 2 person days</p>
+<dl>
+<dt>Tools:</dt>
+<dd>Laptop, barcode/QR scanner, label printer</dd>
+<dt>Duration:</dt>
+<dd>2 person days</dd>
+</dl>
 <p>Inspect parts for visible physical damage - mild cosmetic damage is not a concern. Also apply a new asset sticker if the current one is damaged or illegible. See the following table for example of visible physical damage for each part. Note that a case is considered to be damaged if a panel is cracked entirely in half (or close to it) or if a piece has broken off such that the board can be touched. Once the physical condition of the part has been assessed, update its <code>physical_condition</code> field to either <code>working</code> or <code>broken</code>. If it is broken, add a short description of the issue.</p>
 <table>
 <thead>
@@ -1908,12 +1916,20 @@ Duration: 2 person days</p>
 </tbody>
 </table>
 <h2 id="clean">CLEAN<a class="headerlink" href="#clean" title="Permanent link">&para;</a></h2>
-<p>Tools: Bowl, J cloths, washing up liquid, IPA, label residue remover
-Duration: 2 person days</p>
+<dl>
+<dt>Tools:</dt>
+<dd>Bowl, J cloths, washing up liquid, IPA, label residue remover</dd>
+<dt>Duration:</dt>
+<dd>2 person days</dd>
+</dl>
 <p>Using wringed-out cloth, give each part a wipe with soapy water. If it has adhesive residue, wipe it with label residue remover and then soapy water once the reside has been removed. For removal of grease and pen marks wipe it with IPA.</p>
 <h2 id="test">TEST<a class="headerlink" href="#test" title="Permanent link">&para;</a></h2>
-<p>Tools: See part specific test procedure
-Duration: 6 person days</p>
+<dl>
+<dt>Tools:</dt>
+<dd>See part specific test procedure</dd>
+<dt>Duration:</dt>
+<dd>6 person days</dd>
+</dl>
 <p>Follow the part specific testing procedure linked in the table below. Once the condition of the part has been assessed, update its <code>functional_condition</code> field to either <code>working</code> or <code>broken</code>.</p>
 <table>
 <thead>
@@ -1987,8 +2003,12 @@ Duration: 6 person days</p>
 </tbody>
 </table>
 <h2 id="checkout">CHECKOUT<a class="headerlink" href="#checkout" title="Permanent link">&para;</a></h2>
-<p>Tools: Laptop, barcode/QR scanner
-Duration: 1 person day</p>
+<dl>
+<dt>Tools:</dt>
+<dd>Laptop, barcode/QR scanner</dd>
+<dt>Duration:</dt>
+<dd>1 person day</dd>
+</dl>
 <p>Allocate a box or two for storage of broken parts. Allocate a box or two for storage of working parts of a single type (e.g. one box for servo boards, a couple of boxes for power boards). Check the condition of each part and, if both the <code>functional_condition</code> and <code>physical_condition</code> fields are set to <code>working</code>, place it in the appropriate working box and move it in the Inventory to that box. Otherwise place it in the broken box and move it in the Inventory to the broken box.</p>
 <p>Also, count the following untracked items and note down the totals. Bag the CamCon connectors up by size and write the number of connectors contained on the bag.</p>
 <ul>
