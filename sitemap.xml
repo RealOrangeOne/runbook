@@ -266,6 +266,56 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/asset-tracking/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/kit-storage/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/kit-transport/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/logistics-software/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/post-handling/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/research/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/transport/couriers/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/transport/packaging/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/kit/logistics/transport/procedures/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://srobo.github.io/runbook/kit/software/</loc>
      <lastmod>2019-08-31</lastmod>
      <changefreq>daily</changefreq>
@@ -352,6 +402,11 @@
     </url>
     <url>
      <loc>https://srobo.github.io/runbook/volunteering/communication-platforms/</loc>
+     <lastmod>2019-08-31</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://srobo.github.io/runbook/volunteering/git-and-github/</loc>
      <lastmod>2019-08-31</lastmod>
      <changefreq>daily</changefreq>
     </url>
