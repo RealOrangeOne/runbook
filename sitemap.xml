@@ -11,6 +11,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://studentrobotics.org/runbook/competition/</loc>
+     <lastmod>2020-02-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://studentrobotics.org/runbook/competition/arena/</loc>
      <lastmod>2020-02-12</lastmod>
      <changefreq>daily</changefreq>
@@ -32,11 +37,6 @@
     </url>
     <url>
      <loc>https://studentrobotics.org/runbook/competition/arena/sr2017/</loc>
-     <lastmod>2020-02-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://studentrobotics.org/runbook/competition/event/</loc>
      <lastmod>2020-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -86,32 +86,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://studentrobotics.org/runbook/competition/production/network/</loc>
+     <lastmod>2020-02-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://studentrobotics.org/runbook/competition/production/network/sr2016-cabling/</loc>
      <lastmod>2020-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://studentrobotics.org/runbook/competition/production/network/sr2016-network/</loc>
-     <lastmod>2020-02-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://studentrobotics.org/runbook/competition/production/roles/arena-manager/</loc>
-     <lastmod>2020-02-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://studentrobotics.org/runbook/competition/production/roles/network-manager/</loc>
-     <lastmod>2020-02-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://studentrobotics.org/runbook/competition/production/roles/pits-manager/</loc>
-     <lastmod>2020-02-12</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://studentrobotics.org/runbook/competition/production/roles/venue-manager/</loc>
      <lastmod>2020-02-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
