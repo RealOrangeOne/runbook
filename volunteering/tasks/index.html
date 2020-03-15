@@ -886,9 +886,22 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-toggle md-nav__toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Tasks
+      </label>
 <a class="md-nav__link md-nav__link--active" href="./" title="Tasks">
       Tasks
     </a>
+<nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#labels" title="Labels">
+    Labels
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -902,6 +915,14 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">Table of contents</label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#labels" title="Labels">
+    Labels
+  </a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -950,6 +971,15 @@ has been helping you with the task in order to let them know.</p>
 please do create a task first as a record that you're doing it. There's no need
 to do this for trivial things, but for anything else having a task provides
 visibility into what's being done and who's doing it.</p>
+<h2 id="labels">Labels<a class="headerlink" href="#labels" title="Permanent link">¶</a></h2>
+<p>The tasks repository has many <a href="https://github.com/srobo/tasks/labels">labels</a> which are used to group tasks together, and assign them extra metadata.</p>
+<p>Labels in the repository are split into a few categories, denoted by a prefix character:</p>
+<ul>
+<li><code>A</code>: Area - The area of Student Robotics operations the task is relevant to.</li>
+<li><code>I</code>: Importance - How critical the task is. Tasks may only have 1 <code>I</code> label at any given time</li>
+<li><code>S</code>: State - The current state of the task, which is generally timely.</li>
+</ul>
+<p>There are a few labels which don't fit into a category.</p>
 <p>If you're looking for something to do, you may be able to help out with tasks
 which are labelled as <a href="https://github.com/srobo/tasks/issues?q=is%3Aissue+is%3Aopen+label%3A%22S%3A+Help+Wanted%22">help wanted</a> -- these are generally tasks
 which need a bit more input or have been highlighted as something that can be
