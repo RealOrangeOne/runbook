@@ -13,7 +13,7 @@ This checklist enumerates the tasks that need to be completed to run a virtual c
 - Assign roles for this session
     - Match Runners - Run the simulations of the matches
     - Presenters - Present and commentate the livestream
-    - Producer - Runs the technical aspects of the livestream
+    - [Producer](../livestream/producer.md) - Runs the technical aspects of the livestream
     - Scorer - Updates the compstate with match files
     - Chat Mods - Monitor the livestream and Discord chats
 - Check for any new dropouts and update the compstate as necessary
