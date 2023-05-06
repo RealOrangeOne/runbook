@@ -20,6 +20,7 @@
         "/requirements.txt",
         "*.drawio",
         "*.graffle",
-        "*.svg"
+        "*.svg",
+        "*.html"
     ]
 }
