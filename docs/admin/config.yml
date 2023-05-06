@@ -2,3 +2,11 @@ backend:
   name: github
   repo: RealOrangeOne/srobo-runbook
   cms_label_prefix: decap/
+media_folder: docs
+collections:
+  - label: Page
+    name: "page"
+    folder: "docs"
+    create: true
+    fields:
+      - {label: "Body", name: "body", widget: "markdown"}
