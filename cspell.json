@@ -21,6 +21,7 @@
         "*.drawio",
         "*.graffle",
         "*.svg",
-        "*.html"
+        "*.html",
+        "*.yml"
     ]
 }
