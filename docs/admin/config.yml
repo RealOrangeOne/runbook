@@ -1,0 +1,4 @@
+backend:
+  name: github
+  repo: RealOrangeOne/srobo-runbook
+  cms_label_prefix: decap/
